@@ -430,7 +430,7 @@ Copyright (C) 2021 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/fnap/Documents/robocin/simulation-2d/bases/StarterAgent2D'
+ac_pwd='/home/fnap/Documents/robocin/simulation-2d/project-sim2d'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/usr/bin/mkdir -p'
@@ -661,12 +661,12 @@ S["mkdir_p"]="$(MKDIR_P)"
 S["MKDIR_P"]="/usr/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]=""
-S["install_sh"]="${SHELL} /home/fnap/Documents/robocin/simulation-2d/bases/StarterAgent2D/config/install-sh"
-S["MAKEINFO"]="${SHELL} '/home/fnap/Documents/robocin/simulation-2d/bases/StarterAgent2D/config/missing' makeinfo"
-S["AUTOHEADER"]="${SHELL} '/home/fnap/Documents/robocin/simulation-2d/bases/StarterAgent2D/config/missing' autoheader"
-S["AUTOMAKE"]="${SHELL} '/home/fnap/Documents/robocin/simulation-2d/bases/StarterAgent2D/config/missing' automake-1.16"
-S["AUTOCONF"]="${SHELL} '/home/fnap/Documents/robocin/simulation-2d/bases/StarterAgent2D/config/missing' autoconf"
-S["ACLOCAL"]="${SHELL} '/home/fnap/Documents/robocin/simulation-2d/bases/StarterAgent2D/config/missing' aclocal-1.16"
+S["install_sh"]="${SHELL} /home/fnap/Documents/robocin/simulation-2d/project-sim2d/config/install-sh"
+S["MAKEINFO"]="${SHELL} '/home/fnap/Documents/robocin/simulation-2d/project-sim2d/config/missing' makeinfo"
+S["AUTOHEADER"]="${SHELL} '/home/fnap/Documents/robocin/simulation-2d/project-sim2d/config/missing' autoheader"
+S["AUTOMAKE"]="${SHELL} '/home/fnap/Documents/robocin/simulation-2d/project-sim2d/config/missing' automake-1.16"
+S["AUTOCONF"]="${SHELL} '/home/fnap/Documents/robocin/simulation-2d/project-sim2d/config/missing' autoconf"
+S["ACLOCAL"]="${SHELL} '/home/fnap/Documents/robocin/simulation-2d/project-sim2d/config/missing' aclocal-1.16"
 S["VERSION"]="3.1.1"
 S["PACKAGE"]="agent2d"
 S["CYGPATH_W"]="echo"
