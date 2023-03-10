@@ -64,6 +64,7 @@ Bhv_BasicMove::execute( PlayerAgent * agent )
     dlog.addText( Logger::TEAM,
                   __FILE__": Bhv_BasicMove" );
 
+
     //-----------------------------------------------
     // tackle
     if ( Bhv_BasicTackle( 0.8, 80.0 ).execute( agent ) )
