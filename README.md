@@ -25,32 +25,108 @@ Todas as bases de código para agentes de 2D utilizam uma biblioteca comum para 
 
 
 ## Ferramentas necessárias
-...
+Para começar a desenvolver na categoria são necessárias algumas ferramentas que dão suporte a categoria, ao ambiente e que são utilizadas constantemente na execução de partidas e desenvolvimento do código.
 
-## Setup
+- Ubuntu e pré-requisitos:
+  - Antes de tudo, é bem importante que o sistema operacional para a instalação das demais ferramentas seja o **Ubuntu 18.04 ou superior**. Recomendamos fortemente o Ubuntu 20.04 e é o que utilizamos atualmente no laboratório. É importante ressaltar que o ambiente **não** executa em windows
+  - Além do Ubuntu, é preciso que o sistema possua as devidas dependências:
+    - Compilador de C++:  g++ (que suporte C++ >=  14)
+    - autoconf
+    - automake
+    - flex
+    - bison
+    - boost >= 1.44
+    - libtool
+    
+  - Em caso de Ubuntu 18.04, 20.04 ou 22.04:
+    - O seguinte comando poderá resolver todos pré-requisitos:
+      ```bash
+      sudo apt-get update
+      sudo apt install build-essential automake cmake autoconf libtool flex bison libboost-all-dev
+      ```
+    
+    - Para verificar se o ambiente tem g++, teste com:
+      ```bash
+      g++ -v
+      ```
+      
+    - Para verificar se o flex ou bison foi instalado, teste com:
+      ```bash
+      which flex
+      which bison
+      ```
+      
+- Robocup Soccer Simulation Server (rcssserver)
+  - Utilize o link abaixo para fazer o download do **.tar** da release 17.0.1 do servidor.
+  
+    [Releases · rcsoccersim/rcssserver](https://github.com/rcsoccersim/rcssserver/releases)
+
+    - Após obter o arquivo compactado, extraia e instale.
+      ```bash
+      # extrair o arquivo baixado
+      tar xzvfp rcssserver-x.x.x.tar.gz
+
+      # Entre no diretório
+      cd rcssserver-x.x.x
+
+      # Instale
+      sudo ./configure
+      sudo make
+      sudo make install
+      ```
+
+- Robocup Soccer Simulaiton Monitor (rcssmonitor)
+  - Utilize o link abaixo para fazer o download do **.tar** da release mais recente do monitor.
+    
+    [Release rcssmonitor-17.0.0 · rcsoccersim/rcssmonitor](https://github.com/rcsoccersim/rcssmonitor/releases/tag/rcssmonitor-17.0.0)
+
+  - Após obter o arquivo compactado, extraia e instale.
+    ```bash
+    # extrair o arquivo baixado
+    tar xzvfp rcssmonitor-x.x.x.tar.gz
+
+    # Entre no diretório
+    cd rcssmonitor-x.x.x
+
+    # Instale
+    sudo ./configure
+    sudo make
+    sudo make install
+    ```
+
+    - *Troubleshooting:* 
+      - Em caso de "Qt5Core could not be found". Rode:
+        ```bash
+        sudo apt-get install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
+        ```
+
+
+## Setup do ambiente
 ### Instalação da biblioteca LibRCSC:
-Download last release of StarterLibRCSC from this [Link](https://github.com/naderzare/StarterLibRCSC/releases)
-```bash
-cd StarterLibRCSCPath
-./configure
-make  
-sudo make install
-```  
+Faça o download da release mais recente da StarterLibRCSC nesse [Link](https://github.com/naderzare/StarterLibRCSC/releases)
+  ```bash
+  cd StarterLibRCSCPath
+  ./configure
+  make  
+  sudo make install
+  ```  
 
-### How To Use StarterAgent2D
-#### First Time
-```bash
-cd StarterAgent2DPath
-./configure
-make  
-```
-#### After Any Change
-```bash
-cd StarterAgent2DPath/src
-make
-```
-#### Run
-```bash
-cd src
-./start.sh -t teamname
-```
+### Como usar o StarterAgent2D
+#### Pela primeira vez
+  ```bash
+  cd StarterAgent2DPath
+  ./configure
+  make  
+  ```
+  
+#### Depois de qualquer mudança, recompile
+  ```bash
+  cd StarterAgent2DPath/src
+  make
+  ```
+  
+#### Executar o time
+  ```bash
+  cd src
+  ./start.sh -t teamname
+  ```
