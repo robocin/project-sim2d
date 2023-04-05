@@ -141,3 +141,26 @@ O código que se encontra nesse repositório é o StarterAgent2D, basta clonar e
   cd src
   ./start.sh -t teamname
   ```
+
+### Como rodar uma partida entre dois times
+- Para cada comando será necessário um novo terminal.
+#### Certifique-se de que a instalação da StarterLibRCSC foi feita sem erros.
+#### Primeiramente, em qualquer diretório, execute o servidor:
+  ``` rcssserver ```
+
+#### Para visualizar a partida, em qualquer diretório, execute o monitor:
+  ``` rcssmonitor ```
+
+#### Com o servidor e o monitor rodando, no diretório do starterAgent, inicialize o primeiro time:
+  ```bash
+  cd src
+  ./start.sh -t teamname1
+  ```
+  
+#### Inicialize o segundo time, no diretório do starterAgent, em outro terminal:
+  ```bash
+  cd src
+  ./start.sh -t teamname2
+  ```
+  
+#### Por fim, você verá os dois times inicializados no monitor, basta dar o kick-off na partida.  
