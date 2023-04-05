@@ -121,6 +121,8 @@ Faça o download da release mais recente da StarterLibRCSC nesse [Link](https://
   ```  
 
 ### Como usar o StarterAgent2D
+O código que se encontra nesse repositório é o StarterAgent2D, basta clonar e seguir os próximos passos.
+
 #### Pela primeira vez
   ```bash
   cd StarterAgent2DPath
