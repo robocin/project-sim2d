@@ -75,7 +75,7 @@ Para começar a desenvolver na categoria são necessárias algumas ferramentas q
       sudo make install
       ```
 
-- Robocup Soccer Simulaiton Monitor (rcssmonitor)
+- Robocup Soccer Simulation Monitor (rcssmonitor)
   - Utilize o link abaixo para fazer o download do **.tar** da release mais recente do monitor.
     
     [Release rcssmonitor-17.0.0 · rcsoccersim/rcssmonitor](https://github.com/rcsoccersim/rcssmonitor/releases/tag/rcssmonitor-17.0.0)
@@ -100,6 +100,15 @@ Para começar a desenvolver na categoria são necessárias algumas ferramentas q
         sudo apt-get install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
         ```
 
+- Formation Edit (FEdit):
+  - O FEdit é uma ferramenta que serve para editar formações conforme o desenvolvedor queira. Útil para modificações pontuais nas formações ou até mesmo criar uma formação única. Para realizar a instalção é necessária a instalação da libRCSC, portanto, siga o passo a passo do **setup do ambiente** antes de instalar.
+
+  - Faça o downloand da versão mais atualizada do fedit neste [Link](https://github.com/helios-base/fedit2)
+    - *Troubleshooting:* 
+      - É importante que a linguagem e região do seu Ubuntu esteja em EN-US
+      - Em caso de erro de cast na instalção, altere o seguinte arquivo:
+        - fedit2/tool/average_formation.cpp e modificar a linha 98 para ter o cast de bool 
+        - ``` return (bool) M_target_formation; ```
 
 ## Setup do ambiente
 ### Instalação da biblioteca LibRCSC:
