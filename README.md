@@ -21,8 +21,6 @@ O código que temos nesse repositório é a implementação dos agentes autônom
 
 Todas as bases de código para agentes de 2D utilizam uma biblioteca comum para a implementação dos agentes, a librcsc. Para a nossa base, como já visto acima, iremos utilizar a [StarterLibRCSC](https://github.com/naderzare/StarterLibRCSC). As libs são responsáveis por implementar a interface de rede UDP com o servidor, a transmissão das mensagens no formato que o servidor entende, a tradução das mensagens nos clientes, entre outras responsabilidades de infraestrutura de rede e comportamento dos agentes que são necessárias para o seu funcionamento.
 
-![2Dbox_diagram](https://user-images.githubusercontent.com/53492989/229316010-cb6164b1-2cdd-46d2-a398-148d941f1d66.png)
-
 
 ## Ferramentas necessárias
 Para começar a desenvolver na categoria são necessárias algumas ferramentas que dão suporte a categoria, ao ambiente e que são utilizadas constantemente na execução de partidas e desenvolvimento do código.
